@@ -23,7 +23,14 @@
 	
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
-		"vscjava.vscode-java-pack"
+		"vscjava.vscode-java-pack",
+		"octref.vetur",
+		"Vue.volar",
+		"ms-vsliveshare.vsliveshare-pack",
+		"yandeu.five-server",
+		"esbenp.prettier-vscode",
+		"hollowtree.vue-snippets",
+		"christian-kohler.npm-intellisense"
 	],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
