@@ -11,7 +11,7 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-4">
-          <img src="https://cdn-icons-png.flaticon.com/512/219/219969.png" alt="" class="contact-img"/>
+          <img src="https://cdn-icons-png.flaticon.com/512/219/219969.png" alt="" class="contact-img-big"/>
         </div>
         <div class="col-md-6">
           <ul class="list-group">
@@ -23,6 +23,11 @@
             <li class="list-group-item">Group : <span class="fw-bold">Group</span></li>
           </ul>
         </div>
+      </div>
+    </div>
+    <div class="row mt-3">
+      <div class="col">
+        <router-link to="/" class="btn btn-success"><i class="fa fa-arrow-alt-circle-left"></i> Back</router-link>
       </div>
     </div>
   </div>
