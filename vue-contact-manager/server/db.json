@@ -1,0 +1,35 @@
+{
+    "contacts" : [
+        {
+            "id": "DDef33d",
+            "name": "Brad Gibson"
+        }
+    ],
+    "groups" :  [ {
+        "id" : "1",
+        "name" : "Colleague"
+        },
+        {
+            "id": "2",
+            "name": "Friend"
+        },
+        {
+            "id": "3",
+            "name": "Family"
+        },
+        {
+            "id": "4",
+            "name": "Service"
+        },
+        {
+            "id": "5",
+            "name": "Community"
+        },
+        {
+            "id": "6",
+            "name": "Social"
+        }
+        
+    ]
+ 
+}
