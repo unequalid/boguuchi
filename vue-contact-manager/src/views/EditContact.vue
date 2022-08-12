@@ -45,12 +45,39 @@
         </div>
       </div>
     </div>
+  <pre>{{contact}}</pre>
+  <pre>{{group}}</pre>
   </div>
 </template>
 
 <script>
+import { ContactService } from '@/services/ContactService'
+
 export default {
-  name: "EditContact"
+  name: "EditContact",
+  data : function () {
+    return {
+      contactId : this.$route.params.contactId,
+      loading : false,
+      contact : {},
+      errorMessage : null,
+      group : {}
+    }
+  },
+  created : async function() {
+    try{
+      this.loading = true;
+      let response = await ContactService.getContact(this.contactId);
+      let groupResponse = await ContactService.getGroup(response.data);
+      this.contact = response.data;
+      this.group = groupResponse.data;
+      this.loading = false;
+    }
+    catch (error) {
+      this.errorMessage = error;
+      this.loading = false;
+    }
+  }
 }
 </script>
 
