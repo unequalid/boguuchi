@@ -92,7 +92,7 @@ export default {
       return Object.keys(this.contact).length > 0 && Object.keys(this.group).length > 0;
     }
   },
-  comments : { Spinner }
+  components : { Spinner }
 
 }
 </script>
